@@ -1,6 +1,6 @@
 ﻿# Changelog
 
-## 1.1.1 - Public release prep
+## 1.1.3 - Public release prep
 
 ### Changed
 
