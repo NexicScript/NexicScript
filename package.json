@@ -1,0 +1,53 @@
+﻿{
+  "name": "nexicscript",
+  "version": "1.1.1",
+  "description": "NexicScript official CLI for generating categorized project starters.",
+  "main": "index.js",
+  "bin": {
+    "nxs": "./index.js"
+  },
+  "scripts": {
+    "templates": "node index.js templates",
+    "create": "node index.js create",
+    "info": "node index.js info"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NexicScript/nexicscript.git"
+  },
+  "homepage": "https://github.com/NexicScript/nexicscript#readme",
+  "bugs": {
+    "url": "https://github.com/NexicScript/nexicscript/issues"
+  },
+  "keywords": [
+    "cli",
+    "scaffold",
+    "generator",
+    "template",
+    "nxs",
+    "nexicscript"
+  ],
+  "author": "NexicScript",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "commands/",
+    "lib/",
+    "data/",
+    "branding/",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "figlet": "^1.11.0",
+    "gradient-string": "^3.0.0",
+    "inquirer": "^14.0.2",
+    "ora": "^9.4.1",
+    "readline-sync": "^1.4.10",
+    "to-ico": "^1.1.5"
+  }
+}

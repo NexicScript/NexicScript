@@ -1,0 +1,83 @@
+[
+  {
+    "id": "web",
+    "label": "Web",
+    "description": "Frontend sites and browser-focused starters.",
+    "packageName": "@nexicscript/template-web",
+    "localPackageFolder": "template-web",
+    "templates": [
+      {
+        "id": "web-basic",
+        "label": "Web Basic",
+        "description": "Simple HTML, CSS, and JavaScript starter."
+      },
+      {
+        "id": "react-app",
+        "label": "React App",
+        "description": "React single-page app with Vite structure."
+      },
+      {
+        "id": "static-multi-page",
+        "label": "Static Multi Page",
+        "description": "Traditional multi-page static website."
+      }
+    ]
+  },
+  {
+    "id": "backend",
+    "label": "Backend",
+    "description": "APIs, services, and bot-oriented starters.",
+    "packageName": "@nexicscript/template-backend",
+    "localPackageFolder": "template-backend",
+    "templates": [
+      {
+        "id": "node-api",
+        "label": "Node API",
+        "description": "Express-style backend API starter."
+      },
+      {
+        "id": "fullstack",
+        "label": "Fullstack",
+        "description": "Frontend and backend in one structure."
+      },
+      {
+        "id": "discord-bot",
+        "label": "Discord Bot",
+        "description": "Discord bot project starter."
+      }
+    ]
+  },
+  {
+    "id": "scripting",
+    "label": "Scripting",
+    "description": "Scripts and small command-line tools.",
+    "packageName": "@nexicscript/template-scripting",
+    "localPackageFolder": "template-scripting",
+    "templates": [
+      {
+        "id": "python-script",
+        "label": "Python Script",
+        "description": "Python script project starter."
+      },
+      {
+        "id": "cli-tool",
+        "label": "CLI Tool",
+        "description": "Command-line utility starter."
+      }
+    ]
+  },
+  {
+    "id": "games",
+    "label": "Games",
+    "description": "Game-related project starters.",
+    "packageName": "@nexicscript/template-games",
+    "localPackageFolder": "template-games",
+    "templates": [
+      {
+        "id": "roblox-game",
+        "label": "Roblox Game",
+        "description": "Roblox project starter using Rojo."
+      }
+    ]
+  }
+]
