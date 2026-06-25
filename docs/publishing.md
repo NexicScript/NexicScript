@@ -26,6 +26,7 @@ Recommended repository layout:
 ## Release checklist
 
 - verify the CLI menu
+- verify `nxs install <category>`
 - verify template creation
 - verify `npm pack`
 - verify the published README renders correctly
@@ -33,4 +34,4 @@ Recommended repository layout:
 
 ## Notes
 
-The template loader is designed to fall back to the local workspace during development and use installed package copies when published.
+The template loader falls back to the local workspace during development and uses installed package copies when published. The install command exists for users who want to prepare a category manually.

@@ -1,21 +1,24 @@
 {
-  "name": "@nexicscript/template-backend",
-  "version": "1.0.0",
-  "description": "Backend templates for NexicScript.",
-  "license": "MIT",
-  "private": false,
-  "files": [
-    "templates/",
-    "README.md",
-    "package.json"
-  ],
-  "nexicscript": {
-    "category": "backend",
-    "label": "Backend",
-    "templates": [
-      "node-api",
-      "fullstack",
-      "discord-bot"
-    ]
-  }
+    "name":  "@nexicscript/template-backend",
+    "version":  "2.0.0",
+    "description":  "Backend templates for NexicScript.",
+    "license":  "MIT",
+    "private":  false,
+    "files":  [
+                  "templates/",
+                  "README.md",
+                  "package.json"
+              ],
+    "nexicscript":  {
+                        "category":  "backend",
+                        "label":  "Backend",
+                        "templates":  [
+                                          "node-api",
+                                          "fullstack",
+                                          "discord-bot",
+                                          "rest-api-typescript",
+                                          "graphql-api",
+                                          "microservice"
+                                      ]
+                    }
 }

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "testing",
+    "label": "Testing",
+    "description": "Adds a test folder and a README so you can start organizing test cases.",
+    "aliases": ["tests", "unit-tests"],
+    "files": [
+      {
+        "path": "tests/README.md",
+        "content": "# Tests\n\nUse this folder for test suites, fixtures, and test notes.\n"
+      }
+    ]
+  },
+  {
+    "id": "docs",
+    "label": "Documentation",
+    "description": "Adds a docs folder to expand project documentation without touching existing files.",
+    "aliases": ["documentation", "guide"],
+    "files": [
+      {
+        "path": "docs/README.md",
+        "content": "# Documentation\n\nUse this folder for guides, references, and project notes.\n"
+      }
+    ]
+  },
+  {
+    "id": "docker",
+    "label": "Docker",
+    "description": "Adds Docker starter files for container-based workflows.",
+    "aliases": ["container"],
+    "files": [
+      {
+        "path": "docker/README.md",
+        "content": "# Docker\n\nUse this folder for container support files.\n"
+      },
+      {
+        "path": "docker/Dockerfile",
+        "content": "FROM node:20-alpine\nWORKDIR /app\nCOPY . .\nCMD [\"node\", \"index.js\"]\n"
+      }
+    ]
+  },
+  {
+    "id": "ci-cd",
+    "label": "CI/CD",
+    "description": "Adds a GitHub Actions workflow folder for continuous integration.",
+    "aliases": ["ci", "cicd", "pipeline"],
+    "files": [
+      {
+        "path": ".github/workflows/README.md",
+        "content": "# Workflows\n\nUse this folder for GitHub Actions workflows and automation notes.\n"
+      },
+      {
+        "path": ".github/workflows/ci.yml",
+        "content": "name: CI\n\non:\n  push:\n  pull_request:\n\njobs:\n  build:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - run: npm install\n      - run: npm test\n"
+      }
+    ]
+  }
+]

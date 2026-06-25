@@ -1,4 +1,3 @@
-# @nexicscript/template-games
+# Games Templates
 
-Game templates for NexicScript.
-
+This package contains NexicScript templates for the games category.

@@ -1,0 +1,6 @@
+{
+  "name": "chrome-extension",
+  "version": "1.0.0",
+  "author": "NXS",
+  "description": "Browser extension starter with manifest and content scripts."
+}

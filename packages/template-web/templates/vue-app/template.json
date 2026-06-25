@@ -1,0 +1,6 @@
+{
+  "name": "vue-app",
+  "version": "1.0.0",
+  "author": "NXS",
+  "description": "Vue 3 Vite starter with router and stores folders."
+}

@@ -1,0 +1,6 @@
+{
+  "name": "electron-app",
+  "version": "1.0.0",
+  "author": "NXS",
+  "description": "Desktop app starter with main and preload processes."
+}

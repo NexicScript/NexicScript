@@ -1,0 +1,10 @@
+{
+  "name": "electron-app",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Electron desktop app starter.",
+  "scripts": {
+    "start": "electron ."
+  },
+  "main": "main.js"
+}

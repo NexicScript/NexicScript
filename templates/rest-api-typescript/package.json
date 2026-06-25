@@ -1,0 +1,10 @@
+{
+  "name": "rest-api-typescript",
+  "private": true,
+  "version": "0.1.0",
+  "description": "TypeScript REST API starter.",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsc"
+  }
+}

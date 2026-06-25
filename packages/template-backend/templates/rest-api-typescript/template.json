@@ -1,0 +1,6 @@
+{
+  "name": "rest-api-typescript",
+  "version": "1.0.0",
+  "author": "NXS",
+  "description": "TypeScript REST API starter with routes and services."
+}

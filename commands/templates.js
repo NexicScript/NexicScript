@@ -9,7 +9,7 @@ const {
 } = require("../lib/display");
 
 const {
-    resolveCategoryPackageRoot,
+    ensureCategoryPackage,
     resolveTemplateSource
 } = require("../lib/package-manager");
 
@@ -29,7 +29,7 @@ module.exports = async () => {
 
     const categoryAnswer = await inquirer.prompt([
         {
-            type: "list",
+            type: "select",
             name: "category",
             message: "Pick a template category",
             choices: categories.map(category => ({
@@ -47,11 +47,11 @@ module.exports = async () => {
         return;
     }
 
-    resolveCategoryPackageRoot(category);
+    ensureCategoryPackage(category);
 
     const templateAnswer = await inquirer.prompt([
         {
-            type: "list",
+            type: "select",
             name: "template",
             message: `Pick a template from ${category.label}`,
             choices: formatTemplateChoices(category)

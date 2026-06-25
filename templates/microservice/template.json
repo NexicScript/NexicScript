@@ -1,0 +1,6 @@
+{
+  "name": "microservice",
+  "version": "1.0.0",
+  "author": "NXS",
+  "description": "Docker-ready microservice starter."
+}
