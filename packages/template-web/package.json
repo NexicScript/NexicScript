@@ -1,4 +1,26 @@
 {
+<<<<<<< HEAD
+  "name": "@nexicscript/template-web",
+  "version": "1.0.0",
+  "description": "Web templates for NexicScript.",
+  "license": "MIT",
+  "private": false,
+  "files": [
+    "templates/",
+    "README.md",
+    "package.json"
+  ],
+  "nexicscript": {
+    "category": "web",
+    "label": "Web",
+    "templates": [
+      "web-basic",
+      "react-app",
+      "static-multi-page"
+    ]
+  }
+}
+=======
     "name":  "@nexicscript/template-web",
     "version":  "2.0.0",
     "description":  "Web templates for NexicScript.",
@@ -22,3 +44,4 @@
                                       ]
                     }
 }
+>>>>>>> 28e569b (Release template-web 2.0.0)
