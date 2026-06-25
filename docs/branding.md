@@ -1,6 +1,6 @@
 ﻿# NexicScript Brand Guide
 
-This guide describes the public brand identity for the NexicScript organization.
+This guide defines the public brand identity for the NexicScript organization.
 
 ## Visual identity
 
@@ -11,9 +11,13 @@ NexicScript uses a dark blue and purple palette.
 
 ## Official logo
 
-Use [`Logo.png`](../Logo.png) as the official NexicScript logo.
+Use [`branding/Logo.png`](../branding/Logo.png) as the official NexicScript logo.
 
 This is the logo that should be used in the public README, release assets, and organization pages.
+
+## Banner
+
+Use [`branding/banner.png`](../branding/banner.png) as the official banner image.
 
 ## Recommended usage
 

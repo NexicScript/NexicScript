@@ -9,17 +9,55 @@
       {
         "id": "web-basic",
         "label": "Web Basic",
-        "description": "Simple HTML, CSS, and JavaScript starter."
+        "description": "Simple HTML, CSS, and JavaScript starter.",
+        "aliases": [
+          "html",
+          "static-web"
+        ]
       },
       {
         "id": "react-app",
         "label": "React App",
-        "description": "React single-page app with Vite structure."
+        "description": "React single-page app with Vite structure.",
+        "aliases": [
+          "react",
+          "spa"
+        ]
       },
       {
         "id": "static-multi-page",
         "label": "Static Multi Page",
-        "description": "Traditional multi-page static website."
+        "description": "Traditional multi-page static website.",
+        "aliases": [
+          "multi-page",
+          "static-site"
+        ]
+      },
+      {
+        "id": "vue-app",
+        "label": "Vue App",
+        "description": "Vue 3 Vite starter with router and stores folders.",
+        "aliases": [
+          "vue",
+          "vue3"
+        ]
+      },
+      {
+        "id": "nextjs-app",
+        "label": "Next.js App",
+        "description": "Next.js app router starter with API routes.",
+        "aliases": [
+          "next",
+          "nextjs"
+        ]
+      },
+      {
+        "id": "svelte-app",
+        "label": "Svelte App",
+        "description": "Svelte starter with a clean Vite structure.",
+        "aliases": [
+          "svelte"
+        ]
       }
     ]
   },
@@ -33,17 +71,118 @@
       {
         "id": "node-api",
         "label": "Node API",
-        "description": "Express-style backend API starter."
+        "description": "Express-style backend API starter with extra structure options.",
+        "aliases": [
+          "api",
+          "rest-api",
+          "graphql-api"
+        ],
+        "prompts": [
+          {
+            "id": "api_mode",
+            "message": "Choose the API style",
+            "type": "select",
+            "choices": [
+              {
+                "name": "REST API",
+                "value": "rest",
+                "short": "REST"
+              },
+              {
+                "name": "GraphQL API",
+                "value": "graphql",
+                "short": "GraphQL"
+              }
+            ]
+          }
+        ],
+        "variants": {
+          "rest": {
+            "folders": [
+              "routes",
+              "controllers",
+              "models"
+            ],
+            "files": [
+              {
+                "path": "routes/README.md",
+                "content": "# Routes\n\nPlace REST route definitions here.\n"
+              },
+              {
+                "path": "controllers/README.md",
+                "content": "# Controllers\n\nPlace REST controller logic here.\n"
+              },
+              {
+                "path": "models/README.md",
+                "content": "# Models\n\nPlace data models here.\n"
+              }
+            ]
+          },
+          "graphql": {
+            "folders": [
+              "schema",
+              "resolvers",
+              "models"
+            ],
+            "files": [
+              {
+                "path": "schema/README.md",
+                "content": "# Schema\n\nPlace GraphQL schema definitions here.\n"
+              },
+              {
+                "path": "resolvers/README.md",
+                "content": "# Resolvers\n\nPlace GraphQL resolver logic here.\n"
+              },
+              {
+                "path": "models/README.md",
+                "content": "# Models\n\nPlace shared data models here.\n"
+              }
+            ]
+          }
+        }
       },
       {
         "id": "fullstack",
         "label": "Fullstack",
-        "description": "Frontend and backend in one structure."
+        "description": "Frontend and backend in one structure.",
+        "aliases": [
+          "full-stack"
+        ]
       },
       {
         "id": "discord-bot",
         "label": "Discord Bot",
-        "description": "Discord bot project starter."
+        "description": "Discord bot project starter.",
+        "aliases": [
+          "discord",
+          "bot"
+        ]
+      },
+      {
+        "id": "rest-api-typescript",
+        "label": "REST API TypeScript",
+        "description": "TypeScript REST API starter with routes and services.",
+        "aliases": [
+          "typescript-api",
+          "rest-ts"
+        ]
+      },
+      {
+        "id": "graphql-api",
+        "label": "GraphQL API",
+        "description": "GraphQL API starter with schema and resolvers.",
+        "aliases": [
+          "graphql"
+        ]
+      },
+      {
+        "id": "microservice",
+        "label": "Microservice",
+        "description": "Docker-ready microservice starter.",
+        "aliases": [
+          "service",
+          "micro-service"
+        ]
       }
     ]
   },
@@ -57,12 +196,19 @@
       {
         "id": "python-script",
         "label": "Python Script",
-        "description": "Python script project starter."
+        "description": "Python script project starter.",
+        "aliases": [
+          "python"
+        ]
       },
       {
         "id": "cli-tool",
         "label": "CLI Tool",
-        "description": "Command-line utility starter."
+        "description": "Command-line utility starter.",
+        "aliases": [
+          "command-line",
+          "tool"
+        ]
       }
     ]
   },
@@ -76,7 +222,135 @@
       {
         "id": "roblox-game",
         "label": "Roblox Game",
-        "description": "Roblox project starter using Rojo."
+        "description": "Roblox project starter using Rojo.",
+        "aliases": [
+          "roblox",
+          "rojo"
+        ]
+      },
+      {
+        "id": "unity-game",
+        "label": "Unity Game",
+        "description": "Unity project starter with Assets, Scenes, and Scripts.",
+        "aliases": [
+          "unity"
+        ]
+      },
+      {
+        "id": "godot-game",
+        "label": "Godot Game",
+        "description": "Godot starter for Glunokcraft-style projects.",
+        "aliases": [
+          "godot",
+          "glunokcraft"
+        ]
+      },
+      {
+        "id": "pygame-game",
+        "label": "Pygame Game",
+        "description": "Python game starter with sprites, sounds, and levels.",
+        "aliases": [
+          "pygame",
+          "python-game"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mobile",
+    "label": "Mobile",
+    "description": "Mobile app starters for native and cross-platform apps.",
+    "packageName": "@nexicscript/template-mobile",
+    "localPackageFolder": "template-mobile",
+    "templates": [
+      {
+        "id": "react-native-app",
+        "label": "React Native App",
+        "description": "React Native starter with navigation and assets.",
+        "aliases": [
+          "react-native",
+          "rn"
+        ]
+      },
+      {
+        "id": "flutter-app",
+        "label": "Flutter App",
+        "description": "Flutter starter with screens, widgets, and models.",
+        "aliases": [
+          "flutter",
+          "dart"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "data",
+    "label": "Data",
+    "description": "Data science and machine learning project starters.",
+    "packageName": "@nexicscript/template-data",
+    "localPackageFolder": "template-data",
+    "templates": [
+      {
+        "id": "data-science",
+        "label": "Data Science",
+        "description": "Data science project starter with notebooks and models.",
+        "aliases": [
+          "data",
+          "analysis"
+        ]
+      },
+      {
+        "id": "ml-model",
+        "label": "ML Model",
+        "description": "Machine learning project starter with training and utility files.",
+        "aliases": [
+          "machine-learning",
+          "ml"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced",
+    "label": "Advanced",
+    "description": "Specialized starters for extensions, desktop apps, and workspaces.",
+    "packageName": "@nexicscript/template-advanced",
+    "localPackageFolder": "template-advanced",
+    "templates": [
+      {
+        "id": "chrome-extension",
+        "label": "Chrome Extension",
+        "description": "Browser extension starter with manifest and content scripts.",
+        "aliases": [
+          "extension"
+        ]
+      },
+      {
+        "id": "electron-app",
+        "label": "Electron App",
+        "description": "Desktop app starter with main and preload processes.",
+        "aliases": [
+          "electron",
+          "desktop"
+        ]
+      },
+      {
+        "id": "monorepo",
+        "label": "Monorepo",
+        "description": "Workspace starter with apps and shared packages.",
+        "aliases": [
+          "workspace",
+          "mono"
+        ]
+      },
+      {
+        "id": "library-npm",
+        "label": "Library NPM",
+        "description": "Publishable npm library starter.",
+        "aliases": [
+          "library",
+          "package"
+        ]
       }
     ]
   }

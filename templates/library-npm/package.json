@@ -1,0 +1,12 @@
+{
+  "name": "library-npm",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Publishable npm library starter.",
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts"
+}

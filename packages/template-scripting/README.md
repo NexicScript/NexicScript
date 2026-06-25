@@ -1,4 +1,3 @@
-# @nexicscript/template-scripting
+# Scripting Templates
 
-Python and CLI scripting templates for NexicScript.
-
+This package contains NexicScript templates for the scripting category.

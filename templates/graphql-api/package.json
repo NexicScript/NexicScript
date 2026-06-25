@@ -1,0 +1,10 @@
+{
+  "name": "graphql-api",
+  "private": true,
+  "version": "0.1.0",
+  "description": "GraphQL API starter.",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node src/index.js"
+  }
+}

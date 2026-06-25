@@ -1,0 +1,6 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "author": "NXS",
+  "description": "Workspace starter with apps and shared packages."
+}

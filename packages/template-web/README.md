@@ -1,4 +1,3 @@
-# @nexicscript/template-web
+# Web Templates
 
-Web and frontend templates for NexicScript.
-
+This package contains NexicScript templates for the web category.

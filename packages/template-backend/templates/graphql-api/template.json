@@ -1,0 +1,6 @@
+{
+  "name": "graphql-api",
+  "version": "1.0.0",
+  "author": "NXS",
+  "description": "GraphQL API starter with schema and resolvers."
+}

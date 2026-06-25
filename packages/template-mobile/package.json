@@ -1,0 +1,20 @@
+{
+    "name":  "@nexicscript/template-mobile",
+    "version":  "2.0.0",
+    "description":  "Mobile templates for NexicScript.",
+    "license":  "MIT",
+    "private":  false,
+    "files":  [
+                  "templates/",
+                  "README.md",
+                  "package.json"
+              ],
+    "nexicscript":  {
+                        "category":  "mobile",
+                        "label":  "Mobile",
+                        "templates":  [
+                                          "react-native-app",
+                                          "flutter-app"
+                                      ]
+                    }
+}

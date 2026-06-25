@@ -1,0 +1,12 @@
+{
+  "name": "vue-app",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Vue app starter using Vite.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "type": "module"
+}

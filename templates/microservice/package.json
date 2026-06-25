@@ -1,0 +1,10 @@
+{
+  "name": "microservice",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Microservice starter.",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node src/index.js"
+  }
+}

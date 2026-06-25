@@ -1,4 +1,3 @@
-# @nexicscript/template-backend
+# Backend Templates
 
-Backend, API, and bot templates for NexicScript.
-
+This package contains NexicScript templates for the backend category.
